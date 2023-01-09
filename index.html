@@ -1,0 +1,155 @@
+<!DOCTYPE html> <!-- This website created by Ty Moore -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+        <meta name="author" content="Vincent Garreau" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Ty Moore</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <!-- particles.js container -->
+    
+<div id="particles-js"></div>
+    
+    
+    
+<body>
+    
+    <header id="scroll">
+        <img src="images/tylogo1.svg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#web">WEB</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="port.html">PORTFOLIO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="home">
+        <h1>Ty Moore</h1>
+        <div class="container">  
+        <h2>A Hard Working Student</h2>
+        <br><img src="images/" alt="">
+        </div>
+    
+    </section>
+    
+    <section id="web" class="web">
+        <div class="container">
+        <h2>What I've done</h2><br>
+            <div class="what">
+                <p>What I've Done online that you can see</p><br>
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/img_1.png" style="width:100%" href>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img2.jpg" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img3.jpg" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    }
+                </script>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+        <h2>About Me</h2>
+            <p>I am a nerd for all things computers. From progaming to playing video games. There is still a lot a I can learn about the internet and all things programing.</p>
+            
+            <div class="skills">
+            <h3>Skills</h3>
+                <ul>
+                    <li>JS</li>
+                    <li><div class="skill_bar" style="width:50%"></div></li>
+                    <li>CSS</li>
+                    <li><div class="skill_bar" style="width:95%"></div></li>
+                    <li>HTML</li>
+                    <li><div class="skill_bar" style="width:80%"></div></li>
+                    <li>FLEX-BOX</li>
+                    <li><div class="skill_bar" style="width:100%"></div></li>
+                </ul>
+                <br>
+            </div>
+            
+        </div>
+    </section>
+
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+<script src="https://kit.fontawesome.com/c176b6755b.js" crossorigin="anonymous"></script>
+
+    <!-- <div style="height: 50vh"></div> -->
+
+    
+<footer>
+    
+    <a href="mailto:Munch.Ty@outlook.com" class="email">Munch.Ty@outlook.com</a><br><br>
+    
+    <li><a href="https://www.facebook.com/ty.moore.923"><i class="fab fa-facebook-square"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/tymoore"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li><br><br>
+    
+    <a href="#scroll"><i id="scroll" class="fas fa-arrow-up"></i></a>
+</footer>
+    </body>    
+</html>
