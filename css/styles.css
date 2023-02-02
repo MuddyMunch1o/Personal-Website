@@ -79,7 +79,7 @@ h2{
    text-align: center;
     font-size: 2em;
     padding: 0em 5%;
-    margin: 0em 22%;
+    margin: 0em 25%;
     border-bottom: 3px solid #ffe500;
 }
 
@@ -120,8 +120,9 @@ h3{
 .skill_bar{
     margin-left: -5em;
     padding-right: 10em;
-    height: 0em;
-    border-bottom: 5px dashed #ffe500;
+    height: .em;
+    border: 5px dashed #ffe500;
+    background-color: #FFE500;
 }
 
 
