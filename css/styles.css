@@ -121,8 +121,8 @@ h3{
 .skill_bar{
     margin-left: -5em;
     padding-right: 10em;
-    border: 5px dashed #ffe500;
-    background-color: #FFE500;
+    border: 5px solid #ffe500;
+    background-color: #f88d00;
 }
 
 
