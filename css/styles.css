@@ -33,7 +33,8 @@ section{
     align-items: center;
 }
 
-p{
+.container p{
+    padding: 0 15% 0 15%;
     font-size: 1.em;
 }
 
@@ -120,7 +121,6 @@ h3{
 .skill_bar{
     margin-left: -5em;
     padding-right: 10em;
-    height: .em;
     border: 5px dashed #ffe500;
     background-color: #FFE500;
 }
@@ -133,7 +133,7 @@ h3{
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin-top: 2%;
 }
 
 /* Hide the images by default */
