@@ -90,6 +90,10 @@ h3{
     
 }
 
+h5 {
+    padding: none;
+    margin: 0% 0% 1% 0%;
+}
 /* About */
 
 .skills{
@@ -223,15 +227,23 @@ h3{
 /* Portfolio */
 
 .secton {
-    width: 80%;
+    padding: 1% 10% 0 10%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.secton img {
+   width: 100%;
+   border-radius: 15px;
 }
 
 .lft {
-    width: 40%;
+    padding: 0% 2%;
 }
 
 .rgt {
-    width: 40%;
+    padding: 0% 2%;
 }
 /* footer */
 
