@@ -129,9 +129,13 @@ h3{
 .what p {
     text-align: center;
 }
+
+.what img {
+    border-radius: 1em;
+}
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1250px;
   position: relative;
   margin-top: 2%;
 }
@@ -271,7 +275,6 @@ footer #scroll:hover{
 
 canvas{
   display:block;
-  vertical-align:bottom;
 }
 
 
