@@ -220,6 +220,19 @@ h3{
 }
 
 
+/* Portfolio */
+
+.secton {
+    width: 80%;
+}
+
+.lft {
+    width: 40%;
+}
+
+.rgt {
+    width: 40%;
+}
 /* footer */
 
 footer{
